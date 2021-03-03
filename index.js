@@ -5,7 +5,7 @@ if (process.env.NODE_ENV === "development") {
   dotenv.config();
 }
 
-const client = new Discord.Client({ ws: { intents: ["GUILD_VOICE_STATES"] } });
+const client = new Discord.Client();
 
 client.login(process.env.BOT_TOKEN);
 
