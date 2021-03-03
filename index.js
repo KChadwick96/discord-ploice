@@ -9,7 +9,6 @@ const client = new Discord.Client({ ws: { intents: ["GUILD_VOICE_STATES"] } });
 
 client.login(process.env.BOT_TOKEN);
 
-client.on("debug", console.log);
 client.on("message", async (message) => {
   if (!message.guild) return;
 
